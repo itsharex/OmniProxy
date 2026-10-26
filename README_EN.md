@@ -303,9 +303,9 @@ See the [privacy policy](PRIVACY.md) for the complete data-handling scope, netwo
 
 ## Code signing policy
 
-OmniProxy is preparing to use the SignPath Foundation free code-signing program for open-source projects. Verify a Windows artifact through **Properties → Digital Signatures** instead of relying on its file name or a historical Release description.
+OmniProxy has not obtained SignPath service. v2 Windows installers use a project self-signed certificate, not a publicly trusted CA certificate. Self-signing does not guarantee removal of SmartScreen or unknown-publisher warnings; compare the embedded certificate with the versioned public certificate fingerprint.
 
-See the [Code signing policy](CODE_SIGNING_POLICY.md) for eligible artifacts, trusted build provenance, team roles and manual approval requirements.
+See the [Code signing policy](CODE_SIGNING_POLICY.md) for the current signing method, public certificate, key protection and trust limitations.
 
 ## License
 

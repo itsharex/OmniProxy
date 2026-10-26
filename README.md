@@ -304,9 +304,9 @@ Dev 版使用 `omniproxy_dev` build tag，应用标题、单实例 ID、数据�
 
 ## Code signing policy / 代码签名策略
 
-OmniProxy 正在准备接入 SignPath Foundation 的免费开源代码签名。Windows 产物是否已签名，应通过文件“属性 → 数字签名”核验，不应仅凭文件名或历史 Release 描述判断。
+OmniProxy 未获得 SignPath 服务，v2 Windows 安装包改用项目自签名证书。自签不等同于公开受信任 CA 签名，不保证消除 SmartScreen／未知发布者提示；请核对内嵌证书与对应版本的公开证书指纹。
 
-签名产物范围、受信任构建流程、团队角色和人工审批要求见 [Code signing policy](CODE_SIGNING_POLICY.md)。
+当前签名方式、公开证书、密钥保护及信任边界见 [Code signing policy](CODE_SIGNING_POLICY.md)。
 
 ## 许可证
 
